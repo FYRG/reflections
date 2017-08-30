@@ -1,0 +1,18 @@
+What happens when you initialize a repository? Why do you need to do it?
+使用git init建立代码库，但是由于没有提交，所以还是初始提交的状态，可用git log查看提交日志，发现其实是零提交。然后用git status进行验证，发现有代码库，可能还有工作目录下代码库之外的文件。
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+暂存区属于代码库和工作目录之间的模块，待提交的文件从工作目录提交到代码库需要先提交到暂存区，此时可以批量也可以单独，通过git add filename来添加，如果出现需要删除的不想提交的文件则通过git reset filename进行暂存区的文件删除。
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
