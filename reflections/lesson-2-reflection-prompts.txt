@@ -5,10 +5,10 @@ What value do you think it offers?
 暂存区属于代码库和工作目录之间的模块，待提交的文件从工作目录提交到代码库需要先提交到暂存区，此时可以批量也可以单独，通过git add filename来添加，如果出现需要删除的不想提交的文件则通过git reset filename进行暂存区的文件删除。
 How can you use the staging area to make sure you have one commit per logical
 change?
-
+使用git status查看状态，使用git log查看提交日志，使用git diff ID1 ID2来比较两个ID两次提交的不同，使用git diff来比较工作目录和暂存区的不同的不同，使用git diff --staged来比较暂存区和代码库的不同。
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
-
+使用git branch来查看当前在哪个分支，主分支为master，使用git branch name来新建一个分支，使用git checkout name来切换分支。分支主要用于，同一个项目的不同用途，如游戏不同的难易度，常用软件的不同语言，代码的不同版本，使用的不同场景或不同的人等。
 How do the diagrams help you visualize the branch structure?
 
 What is the result of merging two branches together? Why do we represent it in
